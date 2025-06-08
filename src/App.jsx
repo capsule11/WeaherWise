@@ -1,10 +1,10 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import Home from "./pages/home";
 import Footer from "./components/footer";
 import Forecast from "./pages/forecast";
 import SavedCities from "./pages/home/savedCities";
+import About from "./pages/about";
 
 const App = () => {
   return (
@@ -16,9 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/forecast" element={<Forecast />} />
           <Route path="/saved-cities" element={<SavedCities />} />
-          {/* <Route path="/map" element={<Map />} /> */}
-          {/* <Route path="/about" element={<About />} /> */}
-          {/* <Route path="*" element={<NotFound />} /> Optional fallback */}
+          <Route path="/about" element={<About />} />
         </Routes>
         </div>
       <Footer />
