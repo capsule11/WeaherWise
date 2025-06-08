@@ -3,7 +3,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import Footer from "./components/footer";
 import Forecast from "./pages/forecast";
-import SavedCities from "./pages/home/savedCities";
+import SavedCities from "./pages/savedCities";
 import About from "./pages/about";
 
 const App = () => {
